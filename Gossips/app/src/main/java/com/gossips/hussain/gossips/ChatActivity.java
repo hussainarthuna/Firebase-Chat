@@ -1,6 +1,7 @@
 package com.gossips.hussain.gossips;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
@@ -15,6 +16,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -83,6 +85,7 @@ public class ChatActivity extends AppCompatActivity{
         private ImageButton sendMessageButton;
         private EditText messageInputText;
         private RecyclerView userMessagesList;
+        private RelativeLayout relativeLayout;
 
 
     @Override
@@ -105,6 +108,18 @@ public class ChatActivity extends AppCompatActivity{
 
         userName.setText(messageReceiverUserName);
         Picasso.get().load(messageReceiverUserImage).placeholder(R.drawable.profile_image).into(userImage);
+
+
+        relativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent profileIntent=new Intent(ChatActivity.this,ProfileActivity.class);
+                profileIntent.putExtra(VISIT_USER_ID,messageReceiverID);
+                startActivity(profileIntent);
+
+            }
+        });
 
 
         sendMessageButton.setOnClickListener(new View.OnClickListener() {
@@ -261,6 +276,7 @@ public class ChatActivity extends AppCompatActivity{
         userImage=(CircleImageView)findViewById(R.id.custom_profile_image);
         userName=(TextView)findViewById(R.id.custom_profile_name);
         userLastSeen=(TextView)findViewById(R.id.custom_user_lastSeen);
+        relativeLayout=(RelativeLayout)findViewById(R.id.custom_layout_profile);
         sendMessageButton=(ImageButton) findViewById(R.id.send_message_btn);
         messageInputText=(EditText)findViewById(R.id.input_message);
 

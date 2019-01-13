@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                 if((dataSnapshot.child(NAME).exists())){
 
 
-                    Toast.makeText(MainActivity.this, "Welcome Back", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(MainActivity.this, "Welcome Back", Toast.LENGTH_SHORT).show();
                 }
                 else {
 
