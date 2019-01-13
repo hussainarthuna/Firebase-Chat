@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1060607823514",
+    "firebase_url": "https://gossips-d5f16.firebaseio.com",
+    "project_id": "gossips-d5f16",
+    "storage_bucket": "gossips-d5f16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060607823514:android:b683e37b9b306aa8",
+        "android_client_info": {
+          "package_name": "com.gossips.hussain.gossips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060607823514-dim29111r88fttclo9aqqeqirefaqrhc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gossips.hussain.gossips",
+            "certificate_hash": "f660ee69efd58a4dde8bf4f52ef26a29f9b7009a"
+          }
+        },
+        {
+          "client_id": "1060607823514-v2bph1vruavd7rm7ftddq1270fl35npb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzkE06DpYQqph5aXFM97-1oVy_Zl6VMbE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060607823514-v2bph1vruavd7rm7ftddq1270fl35npb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
